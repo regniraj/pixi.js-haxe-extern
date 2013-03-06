@@ -3,6 +3,7 @@ package test;
 import js.Dom;
 import js.Lib;
 import pixi.AssetLoader;
+import pixi.CommonRenderer;
 import pixi.DisplayObjectContainer;
 import pixi.Global;
 import pixi.PIXI;
@@ -22,7 +23,7 @@ static	var aliens:Array<Dynamic> = [];
 static 	var count:Float = 0;
 static var  alienFrames:Array<String> = ["eggHead.png", "flowerTop.png", "helmlok.png", "skully.png"];
 static var alienContainer:DisplayObjectContainer = new DisplayObjectContainer();
-static var renderer:WebGLRenderer ;
+static var renderer:CommonRenderer ;
 static var stage:Stage = new Stage(0xFFFFFF);
 	
 	static	function animate() {

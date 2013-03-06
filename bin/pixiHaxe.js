@@ -251,11 +251,6 @@ js.Lib.setErrorHandler = function(f) {
 	js.Lib.onerror = f;
 }
 var pixi = pixi || {}
-pixi.CommonRenderer = function() { }
-pixi.CommonRenderer.__name__ = true;
-pixi.CommonRenderer.prototype = {
-	__class__: pixi.CommonRenderer
-}
 pixi.Global = function() { }
 pixi.Global.__name__ = true;
 pixi.Global.request = function(method) {

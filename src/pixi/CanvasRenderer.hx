@@ -12,7 +12,7 @@ extern class CanvasRenderer extends CommonRenderer
 	public  var height:Float;
 	public  var width:Float;
 
-	public function render (stage:Stage):Void;
+	
 	public function renderDisplayObject (displayObject:DisplayObject):Void;
 	public function renderStrip (strip:Dynamic):Void;
 	public function renderStripFlat (strip:Dynamic):Void;

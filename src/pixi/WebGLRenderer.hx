@@ -18,7 +18,6 @@ extern class WebGLRenderer extends CommonRenderer
 	public function initStrip (strip:Dynamic):Void;
 	public function new (width:Int, height:Int):Void;
 	public function removeDisplayObject (displayObject:DisplayObject):Void;
-	public function render(stage:Stage):Void;
 	public function renderStrip (strip:Dynamic):Void;
 	public function resize (width:Int, height:Int):Void;
 	public function updateTexture (texture:Texture):Void;
