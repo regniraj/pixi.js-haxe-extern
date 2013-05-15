@@ -5,7 +5,7 @@ package pixi;
  * @author niraj
  */
 @:native("PIXI.Point")
-extern   class Point
+extern  class Point
 {
 	public var x:Float;
 	public var y:Float;

@@ -19,9 +19,9 @@ extern class Texture extends EventTarget
 	public function removeTextureFromCache (id:String):Void;
 	public function setFrame (frame:Rectangle):Void;
 
-	public static function fromFrame (frameId:String):Void;
-	public static function fromCanvas (canvas:String):Void;
-	public static function fromImage (imageUrl:String):Void;
+	public static function fromFrame (frameId:String):Texture;
+	public static function fromCanvas (canvas:String):Texture;
+	public static function fromImage (imageUrl:String):Texture;
 
 	
 	
