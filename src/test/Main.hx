@@ -1,6 +1,12 @@
 package test;
 
+#if haxe3
+import js.Browser;
+import js.html.HtmlElement;
+#else
 import js.Dom;
+#end
+
 import js.Lib;
 import pixi.AssetLoader;
 import pixi.CommonRenderer;
@@ -24,7 +30,7 @@ static 	var count:Float = 0;
 static var  alienFrames:Array<String> = ["eggHead.png", "flowerTop.png", "helmlok.png", "skully.png"];
 static var alienContainer:DisplayObjectContainer = new DisplayObjectContainer();
 static var renderer:CommonRenderer ;
-static var stage:Stage = new Stage(0xFFFFFF);
+static var stage:Stage = new Stage(0xFFFFFF, false);
 	
 	static	function animate() {
 	
@@ -109,8 +115,12 @@ renderer= PIXI.autoDetectRenderer(800, 600);
 		
 	// add the renderer view element to the DOM
 	
+	#if haxe3
+	Browser.document.body.appendChild(renderer.view);
+	#else
+	Lib.document.body.appendChild(renderer.view);
+	#end
 	
-		Lib.document.body.appendChild(renderer.view);
 	
 	
 	// create an empty container
